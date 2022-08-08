@@ -12,5 +12,5 @@ class Garden < ApplicationRecord
   # def distinct_plants
   #   plots.joins(:plants).select('plants.*').where('days_to_harvest < ?', '100').distinct
   # end
-  #^This above method was created before creating additional relationships and worked to pass the User Story 3. I did not use it because I could not get the appropriate test to pass for it. 
+  #^This above method was created before creating additional relationships and worked to pass the User Story 3. I did not use it because it was returning 'plots' instead of what I wanted, 'plants'
 end
