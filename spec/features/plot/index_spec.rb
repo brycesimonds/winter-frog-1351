@@ -81,7 +81,7 @@ RSpec.describe 'Plots index page' do
     end
 
     expect(current_path).to eq("/plots")
-
+    
     within "#plot-#{plot_1.id}" do 
       expect(page).to_not have_content("Rose")
       expect(page).to have_content("Tulip")
