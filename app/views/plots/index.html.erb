@@ -1,0 +1,15 @@
+<h1>Plots Index Page</h1>
+
+<ul>
+    <% @plots.each do |plot| %>
+        <div id="plot-<%= plot.id %>">
+            <li>Plot number: <%= plot.number %></li>
+            <ul>
+                <% plot.plants.each do |plant| %>
+                    <li><%= plant.name %></li>
+                <% end %>
+            </ul>
+        </div>
+        <br>
+    <% end %>
+</ul>
