@@ -25,8 +25,8 @@ RSpec.describe 'Gardens show page' do
     PlantPlot.create!(plant_id: plant_4.id, plot_id: plot_3.id)
     PlantPlot.create!(plant_id: plant_4.id, plot_id: plot_4.id)
 
-    visit "/plots/#{garden_1.id}"
-
+    visit "/gardens/#{garden_1.id}"
+  
     expect(page).to_not have_content("Rose")
     expect(page).to_not have_content("Tulip")
     expect(page).to have_content("Cactus", count: 1)
